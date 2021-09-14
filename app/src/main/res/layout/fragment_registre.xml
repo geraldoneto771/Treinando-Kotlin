@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EDEDED"
-    tools:context=".Registre">
+    tools:context=".view.Registre">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -44,7 +44,7 @@
         />
 
     <Button
-        android:id="@+id/button_intro"
+        android:id="@+id/button_save1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salvar"

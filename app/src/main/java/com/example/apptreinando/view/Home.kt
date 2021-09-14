@@ -1,4 +1,4 @@
-package com.example.apptreinando
+package com.example.apptreinando.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,26 +6,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.apptreinando.databinding.FragmentIntroBinding
+import com.example.apptreinando.databinding.FragmentHomeBinding
 
+class Home : Fragment() {
 
-class Intro : Fragment() {
+    private lateinit var mBinding: FragmentHomeBinding
 
-    private lateinit var mBinding: FragmentIntroBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        mBinding = FragmentIntroBinding.inflate(inflater)
+        mBinding = FragmentHomeBinding.inflate(inflater)
 
-        mBinding.buttonIntro.setOnClickListener {
-            findNavController().navigate(IntroDirections.actionIntroToHome())
+        mBinding.fab.setOnClickListener {
+            findNavController().navigate(HomeDirections.actionHomeToRegistre())
         }
 
-
         return mBinding.root
-
     }
 
 }

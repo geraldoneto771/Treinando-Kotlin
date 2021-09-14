@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/intro"
-        android:name="com.example.apptreinando.Intro"
+        android:name="com.example.apptreinando.view.Intro"
         android:label="fragment_intro"
         tools:layout="@layout/fragment_intro" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/home"
-        android:name="com.example.apptreinando.Home"
+        android:name="com.example.apptreinando.view.Home"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/registre"
-        android:name="com.example.apptreinando.Registre"
+        android:name="com.example.apptreinando.view.Registre"
         android:label="fragment_registre"
         tools:layout="@layout/fragment_registre" />
 </navigation>
