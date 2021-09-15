@@ -6,7 +6,7 @@ import io.realm.RealmObject
 open class NotesModel(): RealmObject() {
 
     @PrimaryKey (autoGenerate = true)
-    var id: Int = 0
+    var id: Int? = null
     var titleNote: String = ""
     var descriptionNote: String = ""
 }
