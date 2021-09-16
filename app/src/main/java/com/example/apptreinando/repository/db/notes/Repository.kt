@@ -24,6 +24,8 @@ class Repository {
             var list = ArrayList<NotesModel>()
 
             list.addAll(notes)
+            list = ArrayList<NotesModel>()
+            list.addAll(notes)
             _notes.postValue(list)
 
             _notes.value = list

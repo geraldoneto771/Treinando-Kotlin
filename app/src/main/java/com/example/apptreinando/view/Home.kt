@@ -56,6 +56,7 @@ class Home : Fragment() {
         return mBinding.root
     }
 
+
     inner class NoteAdapter(val list: ArrayList<NotesModel>) :
         RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
