@@ -29,7 +29,7 @@ class Registre : Fragment() {
         mBinding.buttonSaveRegistreNote.setOnClickListener {
 
             saveNote()
-            findNavController().popBackStack()
+
         }
 
         return mBinding.root
@@ -49,7 +49,7 @@ class Registre : Fragment() {
 
             mViewModel.createNotes(notes)
 
-
+            findNavController().popBackStack()
             Snackbar.make(mBinding.root, "Nota salva com sucesso!", Snackbar.LENGTH_SHORT).show()
 
         } catch (nfe: NumberFormatException) {
