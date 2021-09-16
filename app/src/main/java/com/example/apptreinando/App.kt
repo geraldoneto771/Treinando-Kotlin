@@ -5,11 +5,10 @@ import io.realm.Realm
 import io.realm.RealmConfiguration
 
 class App: Application() {
-
+    //iniciando as configurações do realm no app
     override fun onCreate() {
         super.onCreate()
-
-        // Iniciando o realm
+        //iniciando o realm
         Realm.init(this)
 
         //configurando o realm
@@ -20,8 +19,7 @@ class App: Application() {
             .allowWritesOnUiThread(true)
             .build()
 
-        // Setando as configurações do realm com as informações da conf
+        //setando as configurações do realm com as informações da conf
         Realm.setDefaultConfiguration(conf)
-
     }
 }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.apptreinando.databinding.FragmentRegistreBinding
 import com.example.apptreinando.model.NotesModel
 import com.example.apptreinando.viewmodel.NotesViewModel
@@ -28,6 +29,7 @@ class Registre : Fragment() {
         mBinding.buttonSaveRegistreNote.setOnClickListener {
 
             saveNote()
+            findNavController().popBackStack()
         }
 
         return mBinding.root

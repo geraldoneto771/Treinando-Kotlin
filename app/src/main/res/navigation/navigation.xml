@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_intro" >
         <action
             android:id="@+id/action_intro_to_home"
-            app:destination="@id/home" />
+            app:destination="@id/home"
+            app:popUpTo="@id/intro" />
     </fragment>
     <fragment
         android:id="@+id/home"
@@ -21,7 +22,8 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_home_to_registre"
-            app:destination="@id/registre" />
+            app:destination="@id/registre"
+            app:popUpTo="@id/home" />
     </fragment>
     <fragment
         android:id="@+id/registre"

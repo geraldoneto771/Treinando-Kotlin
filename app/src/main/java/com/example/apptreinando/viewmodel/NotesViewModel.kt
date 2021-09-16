@@ -19,7 +19,7 @@ class NotesViewModel: ViewModel() {
     //fun deleteNote(id: String): Boolean { return NotesDB().delete(id, _notes)}
 
     // Pegar lista de notas do repositorio local
-    //fun getNote() { NotesDB().getAll(_notes)}
+    fun getNote() { NotesDB().getAll(_notes)}
 
     //
     /*fun update(note: NotesModel, item: Int) {
