@@ -18,6 +18,9 @@ import com.example.apptreinando.databinding.FragmentHomeBinding
 import com.example.apptreinando.databinding.ItemNoteUI
 import com.example.apptreinando.model.NotesModel
 import com.example.apptreinando.viewmodel.NotesViewModel
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class Home : Fragment() {
 
@@ -31,6 +34,11 @@ class Home : Fragment() {
         // Inflate the layout for this fragment
         mBinding = FragmentHomeBinding.inflate(inflater)
         mViewmodel = ViewModelProvider(requireActivity()).get(NotesViewModel::class.java)
+
+        val date = Calendar.getInstance().time
+
+        var dateTimeFormat = SimpleDateFormat("EEE, d MMM yyyy", Locale.getDefault())
+        mBinding.date.text = dateTimeFormat.format(date)
 
         mViewmodel.getNote()
 
