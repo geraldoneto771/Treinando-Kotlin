@@ -43,7 +43,7 @@ class Home : Fragment() {
         mViewmodel.getNote()
 
         mBinding.fab.setOnClickListener {
-            findNavController().navigate(HomeDirections.actionHomeToRegistre())
+            findNavController().navigate(HomeDirections.actionHomeToCreatePoint())
         }
 
         mViewmodel.notes.observe(viewLifecycleOwner, Observer {
